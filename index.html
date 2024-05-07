@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./index.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Create table -->
+    <table id="calcu"> 
+        <tr> 
+            <td colspan="4"> 
+                <input type="text" id="result"> 
+            </td> 
+           
+        </tr> 
+  
+        <tr> 
+            <td><input type="button" value="c"  class="numbers"></td> 
+            <td><input type="button" value="<-" class="numbers"></td> 
+            <td><input type="button" value="."  class="numbers"></td> 
+            <td><input type="button" value="X"  class="operation"></td> 
+           
+            
+        </tr> 
+        <tr> 
+            <td><input type="button" value="7"  class="numbers"></td> 
+            <td><input type="button" value="8"  class="numbers"></td> 
+            <td><input type="button" value="9"  class="numbers"></td>            
+            <td><input type="button" value="/"  class="operation"></td> 
+        </tr> 
+        <tr> 
+            <td><input type="button" value="4" class="numbers"></td> 
+            <td><input type="button" value="5" class="numbers"></td> 
+            <td><input type="button" value="6" class="numbers"></td> 
+            <td><input type="button" value="-" class="operation"></td> 
+        </tr> 
+            <td><input type="button" value="1"  class="numbers" data-type="operand" onclick="setvalue()"></td> 
+            <td><input type="button" value="2"  class="numbers" data-type="operand"></td> 
+            <td><input type="button" value="3"  class="numbers" data-type="operand"></td>
+            <td><input type="button" value="+"  class="operation"></td> 
+        </tr>
+        <tr>
+            <td><input type="button" value="0"   class="numbers"></td> 
+            <td><input type="button" value="00"  class="numbers"></td> 
+            <td colspan="2"><input type="button" value="=" class="operation"></td> 
+             
+        </tr> 
+    </table> 
+    <script src="./script.js"></script>
+</body> 
+</body>
+</html>
