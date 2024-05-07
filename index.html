@@ -12,44 +12,45 @@
     <table id="calcu"> 
         <tr> 
             <td colspan="4"> 
-                <input type="text" id="result"> 
+                <input type="text" id="result"  enabled> 
             </td> 
            
         </tr> 
   
         <tr> 
-            <td><input type="button" value="c"  class="numbers"></td> 
-            <td><input type="button" value="<-" class="numbers"></td> 
-            <td><input type="button" value="."  class="numbers"></td> 
-            <td><input type="button" value="X"  class="operation"></td> 
+            <td><input type="button" value="c"  class="numbers" onclick="Clear()"></td> 
+            <td><input type="button" value="<-" class="numbers" onclick="Back()"></td> 
+            <td><input type="button" value="."  class="numbers" onclick="setvalue(value)"></td> 
+            <td><input type="button" value="X"  class="operation" onclick="setvalue(value)"></td> 
            
             
         </tr> 
         <tr> 
-            <td><input type="button" value="7"  class="numbers"></td> 
-            <td><input type="button" value="8"  class="numbers"></td> 
-            <td><input type="button" value="9"  class="numbers"></td>            
-            <td><input type="button" value="/"  class="operation"></td> 
+            <td><input type="button" value="7"  class="numbers" data-type="operand" onclick="setvalue(value)"></td> 
+            <td><input type="button" value="8"  class="numbers" onclick="setvalue(value)"></td> 
+            <td><input type="button" value="9"  class="numbers" onclick="setvalue(value)"></td>            
+            <td><input type="button" value="/"  class="operation" onclick="setvalue(value)"></td> 
         </tr> 
         <tr> 
-            <td><input type="button" value="4" class="numbers"></td> 
-            <td><input type="button" value="5" class="numbers"></td> 
-            <td><input type="button" value="6" class="numbers"></td> 
-            <td><input type="button" value="-" class="operation"></td> 
+            <td><input type="button" value="4" class="numbers" onclick="setvalue(value)"></td> 
+            <td><input type="button" value="5" class="numbers" onclick="setvalue(value)"></td> 
+            <td><input type="button" value="6" class="numbers" onclick="keypress(value)"></td> 
+            <td><input type="button" value="-" class="operation" onclick="setvalue(value)"></td> 
         </tr> 
-            <td><input type="button" value="1"  class="numbers" data-type="operand" onclick="setvalue()"></td> 
-            <td><input type="button" value="2"  class="numbers" data-type="operand"></td> 
-            <td><input type="button" value="3"  class="numbers" data-type="operand"></td>
-            <td><input type="button" value="+"  class="operation"></td> 
+            <td><input type="button" value="1"  class="numbers" data-type="operand" onclick="setvalue(value)"></td> 
+            <td><input type="button" value="2"  class="numbers" data-type="operand" onclick="setvalue(value)"></td> 
+            <td><input type="button" value="3"  class="numbers" data-type="operand" onclick="setvalue(value)"></td>
+            <td><input type="button" value="+"  class="operation" onclick="setvalue(value)""></td> 
         </tr>
         <tr>
-            <td><input type="button" value="0"   class="numbers"></td> 
-            <td><input type="button" value="00"  class="numbers"></td> 
-            <td colspan="2"><input type="button" value="=" class="operation"></td> 
+            <td><input type="button" value="0"   class="numbers" onclick="setvalue(value)"></td> 
+            <td><input type="button" value="00"  class="numbers" onclick="setvalue(value)"></td> 
+            <td colspan="2"><input type="button" value="=" class="operation" onclick="Result()"></td> 
              
         </tr> 
     </table> 
     <script src="./script.js"></script>
+
 </body> 
 </body>
 </html>
